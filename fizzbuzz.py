@@ -53,14 +53,12 @@ y=list(range(0,num+1,fizz))
 z=list(range(0,num+1,buzz))
 w=y+z
 
-while num > 0:
-
-    if a in w:
-        print("FizzBuzz")
+if a in w:
+    print("FizzBuzz")
+else:
+    if b in y:
+        print("Fizz")
+    elif c in z:
+        print("Buzz")
     else:
-        if b in y:
-            print("Fizz")
-        elif c in z:
-            print("Buzz")
-        else:
-            print(num)
+        print(num)
