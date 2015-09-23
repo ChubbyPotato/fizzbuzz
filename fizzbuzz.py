@@ -52,8 +52,8 @@ fiz="Fizz"
 buz="Buzz"
 
 x=range(1,num+1)
-y=range(1,fizz+1)
-z=range(1,buzz+1)
+y=list(range(1,fizz+1,fizz))
+z=list(range(1,buzz+1,buzz))
 
 for i in x:
     print(i)
