@@ -49,14 +49,8 @@ fizz=int(input("For multiples of what number shall we print 'Fizz'? "))
 buzz=int(input("For multiples of what number shall we print 'Buzz'? "))
 
 x=range(1,num+1)
-y=range(1,num)
-z=range(1,num)
+y=list(range(0,num+1,fizz))
+z=list(range(0,num+1,buzz))
 
 for i in x:
     print(i)
-    for h in y:
-        if h in hi:
-            print("Fizz")
-            for j in z: 
-                if j in he:
-                    print("Buzz")
