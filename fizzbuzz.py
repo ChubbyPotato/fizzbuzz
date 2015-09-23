@@ -52,5 +52,9 @@ x=range(1,num+1)
 y=list(range(0,num+1,fizz))
 z=list(range(0,num+1,buzz))
 
-for i in x:
-    print(i)
+for a in x:
+    print(a)
+    for b in y:
+        print("Fizz")
+    for c in z:
+        print("Buzz")
