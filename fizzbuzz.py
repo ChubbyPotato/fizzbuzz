@@ -51,10 +51,16 @@ buzz=int(input("For multiples of what number shall we print 'Buzz'? "))
 x=range(1,num+1)
 y=list(range(0,num+1,fizz))
 z=list(range(0,num+1,buzz))
+w=y+z
 
-for a in x:
-    print(a)
-    for b in y:
-        print("Fizz")
-    for c in z:
-        print("Buzz")
+while num > 0:
+
+    if a in w:
+        print("FizzBuzz")
+    else:
+        if b in y:
+            print("Fizz")
+        elif c in z:
+            print("Buzz")
+        else:
+            print(num)
